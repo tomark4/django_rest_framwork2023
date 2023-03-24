@@ -5,4 +5,6 @@ from .models import User
 
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
-    pass
+    fieldsets = BaseUserAdmin.fieldsets + (
+        ('Others',{'fields':('website','twitter',)}),
+    )
