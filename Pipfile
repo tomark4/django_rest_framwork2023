@@ -37,6 +37,8 @@ uritemplate = "==4.1.1"
 urllib3 = "==1.26.15"
 wrapt = "==1.15.0"
 python-dotenv = "*"
+djangorestframework-simplejwt = "*"
+psycopg2 = "*"
 
 [dev-packages]
 

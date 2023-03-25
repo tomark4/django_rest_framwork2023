@@ -94,3 +94,5 @@ media/
 .vscode/
 
 static/
+
+pg_data/
