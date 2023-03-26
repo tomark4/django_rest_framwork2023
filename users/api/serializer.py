@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from users.models import User
 
+
 class UserRegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -16,3 +17,23 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         instance.save()
         
         return instance
+    
+
+class UserSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = User
+    fields = ['id','email','first_name','last_name','username']
+
+
+class UserUpdateSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = User
+    fields = ['first_name','last_name']
+    extra_kwargs = {
+      'first_name':{
+        'required':True
+      }, 
+      'last_name': {
+        'required':True
+      }
+    }
