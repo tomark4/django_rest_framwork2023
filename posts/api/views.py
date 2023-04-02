@@ -6,8 +6,8 @@ from .permissions import IsAdminOrReadOnly
 
 class PostModelViewSet(ModelViewSet):
 
+    queryset = Post.objects.filter(published=True)
     serializer_class = PostSerializer
-    queryset = Post.objects.all()
 
     # Agregar permisos al endpoint
     # isAdminUser = Solo para administradores

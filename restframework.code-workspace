@@ -5,18 +5,18 @@
     }
   ],
   "settings": {
-    // "python.linting.pycodestyleEnabled": false,
-    // "python.linting.pylintEnabled": true,
-    // "python.linting.enabled": true,
-    // "python.linting.pylintArgs": [
-    //   "--ignore-errors",
-    //   "--load-plugins",
-    //   "pylint_django"
-    // ],
-    // "editor.formatOnSave": false,
-    // "editor.fontSize": 20,
-    // "emmet.includeLanguages": {
-    //   "django-html": "html"
-    // }
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+      "--ignore-errors",
+      "--load-plugins",
+      "pylint_django"
+    ],
+    "editor.formatOnSave": false,
+    "editor.fontSize": 20,
+    "emmet.includeLanguages": {
+      "django-html": "html"
+    }
   }
 }

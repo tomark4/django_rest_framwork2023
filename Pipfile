@@ -39,6 +39,8 @@ wrapt = "==1.15.0"
 python-dotenv = "*"
 djangorestframework-simplejwt = "*"
 psycopg2 = "*"
+django-filter = "*"
+pillow = "*"
 
 [dev-packages]
 
