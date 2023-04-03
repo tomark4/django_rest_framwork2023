@@ -9,6 +9,7 @@ from categories.api.serializers import CategorySerializer
 class PostSerializer(serializers.ModelSerializer):
   user = UserSerializer()
   category = CategorySerializer()
+  
   class Meta:
     model = Post
     fields = ['title','content','slug','thumbnail','published','user','category']
