@@ -3,7 +3,6 @@ from users.models import User
 from django.db.models import SET_NULL
 from categories.models import Category
 
-
 class Post(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField()
@@ -13,6 +12,10 @@ class Post(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User,on_delete=SET_NULL, null=True)
     category = models.ForeignKey(Category,on_delete=SET_NULL, null=True)
+
+    # def save(self, *args, **kwargs):
+    #     self.slug  = slugify(self.title)
+    #     return super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title
