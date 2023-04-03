@@ -159,3 +159,7 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME':datetime.timedelta(minutes=60),
     'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=7)
 }
+
+MEDIA_ROOT = 'media/'
+MEDIA_URL = 'media/'
+
